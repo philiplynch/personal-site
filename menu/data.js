@@ -1,7 +1,7 @@
 export const projects = [
     {
         name: "Food Ordering App",
-        url: "menu/menu/index.html",
+        url: "menu/index.html",
         completed_on: "February 16, 2023",
         description: "A food ordering app which only allows the user to select one of each item. System then records credit card information and finally presents the items ordered, price, and expected completion time.",
         jsconcepts: [
