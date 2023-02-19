@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <title></title>
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        
+        <header>
+            <h1>📖 PhilipLynch.ca Guestbook</h1>
+        </header>
+        
+        
+        <main>
+            <div class="fillable-form">
+                <input type="text" placeholder="Name" name="name" id="name" class="form-element">
+                <input type="text" placeholder="Location" name="location" id="location" class="form-element">
+                <textarea placeholder="Please enter your comment here!" name="comment" id="comments" class="form-element"></textarea>
+                <button type="submit" name="submit" id="submit">Submit Comment!</button> 
+            </div>
+            <div class="guestbook-entries" id="guestbook-entries"></div>
+        </main>
+        
+        
+        <script src="index.js" type="module"></script>
+    </body>
+</html>

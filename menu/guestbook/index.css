@@ -1,0 +1,97 @@
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #F1F1F1;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+header {
+    padding: 1em;
+    width: 100%;
+    background-color: #2196F3;
+    color: #FFF;
+    text-align: center;
+    
+   
+}
+
+header > h1 {
+    text-align: center;
+}
+
+main {
+    padding: 1em;
+}
+
+
+
+.fillable-form {
+    background-color: #FFF;
+    padding: 1em;
+    border: 1px solid #2196F3;
+    border-radius: 10px;
+}
+
+.guestbook-entries {
+    background-color: #FFF;
+    padding: 1em;
+    border: 1px solid #2196F3;
+    margin-top: 1em;
+    
+}
+
+.form-element {
+    padding: 0.4em 0.8em;
+    border-radius: 10px;
+    margin: 1em;
+    
+}
+
+#comments {
+    width: 80%;
+}
+
+button {
+  background-color: #0070c9;
+  color: #fff;
+  padding: 0.75em 1.5em;
+  border: none;
+  border-radius: 0.5em;
+  font-size: 1em;
+  cursor: pointer;
+  margin: 1em;
+}
+
+.entry {
+    display: grid;
+    grid-template: 
+        "name location"
+        "comment comment";
+    padding: 1em;
+    grid-gap: 1em;
+    border: 1px solid #777;
+    border-radius: 10px;
+    margin: 1em;
+    color: black;
+    background-color: azure;
+}
+
+.entry-name {
+    grid-area: name;
+    font-size: 1.2em;
+    font-weight: 700;
+    
+}
+.entry-location {
+    grid-area: location;
+    
+}
+.entry-comment {
+    grid-area: comment;
+}
