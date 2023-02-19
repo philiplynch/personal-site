@@ -1,4 +1,4 @@
-import { comments } from 'data.js'
+import { comments } from '/data.js'
 import Swal from 'sweetalert2';
 
 
