@@ -1,12 +1,10 @@
-import { comments } from '/data.js'
+import { comments } from './data.js'
 import Swal from 'sweetalert2';
 
 
 
 document.getElementById('guestbook-entries').innerHTML = `<h1>Entries</h1>`
 document.getElementById('submit').addEventListener("click", addComment)
-
-
 
 function render() {
     
