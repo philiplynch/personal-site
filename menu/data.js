@@ -25,7 +25,7 @@ export const projects = [
             "error handling"
   ]
         
-    }
+    },
     
     {
         name: "Guestbook",
