@@ -17,7 +17,7 @@ html, body {
   width: 70%;
   height: 60vh;
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 500px;
 }
 
 .square {
@@ -122,6 +122,7 @@ header {
 }
 .new-game:hover {
     background-color: yellow;
+    cursor: pointer;
 }
 
 h1 {
