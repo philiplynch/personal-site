@@ -37,5 +37,15 @@ export const projects = [
   ]
         
     }
+    {
+        name: "Tic Tac Toe",
+        url: "tictactoe/index.html",
+        completed_on: "February 24, 2023",
+        description: "A Tic Tac Toe Game which allows users to change the number of squares on the board. Confirms new game if current game not complete.",
+        jsconcepts: [
+            "ES6 Modules", "document.getElementById()", "addEventListener()", "innerHTML", "Template literals", "Object properties", "Function definition", "Error handling"
+  ]
+        
+    }
     
 ]
