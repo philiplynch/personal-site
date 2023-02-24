@@ -36,7 +36,7 @@ export const projects = [
             "ES6 Modules", "import statement", "export keyword", "document.getElementById()", "addEventListener()", "innerHTML", "Template literals", "Array.map()", "Array.join()", "Object properties", "Array.unshift()", "Function definition", "Error handling", "External library"
   ]
         
-    }
+    },
     {
         name: "Tic Tac Toe",
         url: "tictactoe/index.html",
