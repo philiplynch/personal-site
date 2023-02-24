@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <title></title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header>
+            <h1 id="title">Ultra Tic Tac Toe</h1>
+            <div class="new-game" id="new-game">NEW GAME</div>
+        </header>
+        
+        <div class="container-info" id="container-info">
+            <div class ="numberofSquares">
+                Squares: 
+                <span class="numberOfSquares" id="numberOfSquares4">4</span>
+                <span class="numberOfSquares" id="numberOfSquares9">9</span>
+                <span class="numberOfSquares" id="numberOfSquares16">16</span>
+                <span class="numberOfSquares" id="numberOfSquares25">25</span>
+                <span class="numberOfSquares" id="numberOfSquares36">36</span>
+            </div>
+
+        </div>
+        
+        <div class="container-info">
+            <div class="whoseplay" id="whoseplay"></div>
+        </div>
+        
+        <div class="winner" id="winner"></div>
+            
+        <div class="board" id="board"></div>
+        
+        <div class="popup" id="popup">
+            <h2>Your game isn't yet done. Would you like to Continue or Reset and start over?</h2>
+            <div class="div-options">
+                <button id="button-continue" class="button-options">CONTINUE</button>
+                <button id="button-reset" class="button-options">RESET</button>
+            </div>
+            
+        </div>
+        
+        <script src="index.js" type="module"></script>
+    </body>
+</html>
