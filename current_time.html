@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Current Time in Los Angeles</title>
+</head>
+<body>
+<h1>Current Time in Los Angeles</h1>
+<p>The current time in Los Angeles is:</p>
+<script>
+// Import the Google Maps API.
+const googlemaps = require("googlemaps");
+
+// Create a Google Maps API client.
+const gmaps = new googlemaps.Client();
+
+// Get the current time in Los Angeles.
+const current_time = gmaps.timezone("Los Angeles")['time'];
+
+// Display the current time.
+document.querySelector("p").innerHTML = current_time;
+</script>
+</body>
+</html>
