@@ -22,3 +22,4 @@ function displayClosestGameStop() {
     document.getElementById('closestStore').innerHTML = 'No GameStop stores found.';
   }
 }
+document.getElementById('test').innerHTML = "this is the test area"
