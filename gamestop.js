@@ -15,10 +15,11 @@ function getClosestGameStop() {
 window.onload = getClosestGameStop;
 
 function displayClosestGameStop() {
-  if (closestStore) {
-    var address = results[0].formatted_address;
-    document.getElementById('closestStore').innerHTML = 'The closest GameStop store to 1221 Main St W, Hazen, ND 58545 is ' + address;
-  } else {
-    document.getElementById('closestStore').innerHTML = 'No GameStop stores found.';
+    if (closestStore) {
+      var address = results[0].formatted_address;
+      document.getElementById('closestStore').innerHTML = address;
+    } else {
+      document.getElementById('closestStore').innerHTML = 'No GameStop stores found.';
+    }
   }
-}
+  
