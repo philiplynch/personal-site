@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Closest GameStop Store</title>
+<title>Location Autocomplete</title>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2w3C2pn_MsViHfegaesup9OJPgXeq6aw&libraries=places"></script>
+<style>
+#location-input {
+  width: 300px;
+  padding: 10px;
+}
+</style>
 </head>
 <body>
+<h1>Location Autocomplete</h1>
+<input type="text" id="location-input" placeholder="Enter a location">
 
-<script src="./gamestop.js"></script>
-<div id="map"></div>
-<div id="closestStore"></div>
-<div id="test"></div>
-test of html file.
+<script>
+// Initialize the autocomplete service
+function initialize() {
+  const input = document.getElementById('location-input');
+  const autocomplete = new google.maps.places.Autocomplete(input);
+}
+
+// Load the Places Autocomplete library
+function loadScript() {
+  const script = document.createElement('script');
+  script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyB2w3C2pn_MsViHfegaesup9OJPgXeq6aw&libraries=places&callback=initialize';
+  document.body.appendChild(script);
+}
+
+// Load the library when the page loads
+window.onload = loadScript;
+</script>
 </body>
 </html>
