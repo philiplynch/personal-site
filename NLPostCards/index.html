@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    	<title>Postcard Mailing Service Calculator</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<img src="postcard.png" width="700">
+    <h1>Postcard Mailing Service Price Calculator</h1>
+
+    <form id="calculator">
+        <label for="quantity">How many postcards would you like to order?</label>
+        <select id="quantity" name="quantity">
+            <option value="50">50</option>
+            <option value="100">100</option>
+            <option value="250">250</option>
+            <option value="500">500</option>
+            <option value="1000">1000</option>
+            <option value="1500">1500</option>
+        </select>
+
+        <label for="design">Would you like us to design the postcard?</label>
+        <select id="design" name="design">
+            <option value="no">No, I will provide my own design</option>
+            <option value="yes">Yes, please design for me</option>
+        </select>
+
+        <label for="address">Do you have a formatted spreadsheet of addresses?</label>
+        <select id="address" name="address">
+            <option value="yes">Yes</option>
+            <option value="no">No, I need address cleanup</option>
+        </select>
+
+        <button type="button" onclick="calculatePrice()">Calculate Price</button>
+</form>
+
+<h2>Price Per Unit: $<span id="pricePerUnit">0.00</span></h2>
+<p class="subtext">Total Price (before tax): $<span id="totalPrice">0.00</span></p>
+<p class="tax-note">* Plus applicable taxes</p>
+
+    <script src="calculator.js"></script>
+</body>
+</html>
