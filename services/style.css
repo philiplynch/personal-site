@@ -112,3 +112,29 @@ footer {
     background-color: #0056b3;
     color: #fff;
 }
+
+.video-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.video-placeholder {
+    background-color: #ddd; /* Placeholder background color */
+    width: 100px; /* Adjust based on your preference */
+    height: 177.78px; /* Height calculated based on a 9:16 aspect ratio */
+    border: 2px solid #ccc; /* Placeholder border */
+    border-radius: 8px; /* Optional: Adds rounded corners to the placeholder */
+}
+
+/* Ensure that the video placeholders do not stretch too much on larger screens */
+@media (max-width: 768px) {
+    .video-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .video-placeholder {
+        margin-bottom: 20px;
+    }
+}
+
