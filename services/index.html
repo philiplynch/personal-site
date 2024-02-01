@@ -7,44 +7,42 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <h1>Philip Lynch Business Services</h1>
-            <nav class="navbar">
-                <a href="#video-production">Video Production</a>
-                <a href="#business-postcards">Business Postcards</a>
-                <a href="#contact-us">Contact Us</a>
-            </nav>
-        </header>
-        <main>
-            <section id="intro" class="intro-section">
-                <div class="intro-content">
-                    <h2>Bringing Your Business to Life</h2>
-                    <p>Engage your audience with our creative video production and business postcard services.</p>
-                </div>
-            </section>
-            <section id="video-production" class="services-section video-production">
-                <h2>Video Production</h2>
-                <p>We create captivating 1-2 minute short videos tailored for social media platforms like Instagram and TikTok.</p>
-            </section>
-            <section id="business-postcards" class="services-section business-postcards">
-                <h2>Business Postcards</h2>
-                <p>From creation to mailing, we handle every step of your business postcard needs. Just provide the address list!</p>
-            </section>
-            <section id="contact-us" class="contact-section">
-                <h2>Contact Us</h2>
-                <form>
-                    <input type="text" placeholder="Name" required>
-                    <input type="email" placeholder="Email" required>
-                    <textarea placeholder="Message" required></textarea>
-                    <button type="submit">Send</button>
-                </form>
-            </section>
-        </main>
-        <footer>
-            <p>© 2024 Philip Lynch Business Services. All rights reserved.</p>
-        </footer>
-    </div>
-    <script src="script.js"></script>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Philip Lynch</div>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1>Professional Business Services</h1>
+        <p>Enhance your brand's visibility with our specialized services</p>
+    </section>
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-item">
+            <h3>Video Production</h3>
+            <p>Engaging short videos for social media</p>
+        </div>
+        <div class="service-item">
+            <h3>Business Postcards</h3>
+            <p>Comprehensive postcard services from design to delivery</p>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <footer>
+        <p>© 2024 Philip Lynch Business Services. All rights reserved.</p>
+    </footer>
 </body>
 </html>
