@@ -13,9 +13,9 @@ body, html {
 
 /* Header */
 header {
-    width: 100%; /* Ensure header spans the full width */
     background-color: #0056b3;
     color: #fff;
+    padding: 1rem 2rem; /* Adjusted for simplicity */
 }
 
 /* Navbar */
@@ -23,8 +23,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
-    width: 100%; /* Ensure navbar spans the full width */
 }
 
 .logo, .nav-links {
@@ -34,7 +32,6 @@ header {
 
 .nav-links {
     list-style: none;
-    padding: 0;
 }
 
 .nav-links li {
@@ -75,6 +72,32 @@ header {
     border-radius: 5px;
 }
 
+/* Video Container */
+.video-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.video-placeholder {
+    background-color: #ddd;
+    width: 100px; /* Adjusted size */
+    height: 177.78px; /* TikTok aspect ratio but smaller */
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .video-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video-placeholder {
+        margin-bottom: 20px;
+    }
+}
+
 /* Contact Section */
 .contact {
     background-color: #f4f4f4;
@@ -112,29 +135,3 @@ footer {
     background-color: #0056b3;
     color: #fff;
 }
-
-.video-container {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-
-.video-placeholder {
-    background-color: #ddd; /* Placeholder background color */
-    width: 100px; /* Adjust based on your preference */
-    height: 177.78px; /* Height calculated based on a 9:16 aspect ratio */
-    border: 2px solid #ccc; /* Placeholder border */
-    border-radius: 8px; /* Optional: Adds rounded corners to the placeholder */
-}
-
-/* Ensure that the video placeholders do not stretch too much on larger screens */
-@media (max-width: 768px) {
-    .video-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    .video-placeholder {
-        margin-bottom: 20px;
-    }
-}
-
