@@ -1,0 +1,83 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #123456;
+    color: #fff;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero Section */
+#hero {
+    background-color: #1A237E;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+/* Service Sections */
+.service-section {
+    padding: 50px 20px;
+    background-color: #E8EAF6;
+}
+
+.service-section:nth-child(odd) {
+    background-color: #C5CAE9;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #5C6BC0;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+#contact-form input, #contact-form textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+#contact-form button {
+    background-color: #283593;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #123456;
+    color: #fff;
+    text-align: center;
+   
