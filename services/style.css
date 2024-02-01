@@ -11,18 +11,33 @@ body, html {
     color: #333;
 }
 
+/* Header */
+header {
+    width: 100%; /* Ensure header spans the full width */
+    background-color: #0056b3;
+    color: #fff;
+}
+
 /* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #0056b3;
-    color: #fff;
+    width: 100%; /* Ensure navbar spans the full width */
+}
+
+.logo, .nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
 }
 
 .nav-links li {
-    list-style: none;
     display: inline;
     margin-left: 20px;
 }
@@ -30,6 +45,12 @@ body, html {
 .nav-links a {
     color: #fff;
     text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.nav-links a:hover {
+    background-color: #004494;
+    border-radius: 5px;
 }
 
 /* Hero Section */
@@ -70,14 +91,18 @@ form input, form textarea {
     width: 100%;
     margin: 10px 0;
     padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 form button {
+    width: 100%;
+    padding: 10px;
     background-color: #0056b3;
-    color: #fff;
-    padding: 0.5rem 2rem;
+    color: white;
     border: none;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 /* Footer */
