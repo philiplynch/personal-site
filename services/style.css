@@ -15,7 +15,7 @@ body, html {
 header {
     background-color: #0056b3;
     color: #fff;
-    padding: 1rem 2rem; /* Adjusted for simplicity */
+    padding: 1rem 2rem;
 }
 
 /* Navbar */
@@ -85,6 +85,11 @@ header {
     height: 177.78px; /* TikTok aspect ratio but smaller */
     border: 2px solid #ccc;
     border-radius: 8px;
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.video-placeholder:hover {
+    background-color: #bbb; /* Darker shade when hovered */
 }
 
 @media (max-width: 768px) {
