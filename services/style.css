@@ -80,16 +80,28 @@ header {
 }
 
 .video-placeholder {
+    position: relative;
     background-color: #ddd;
-    width: 100px; /* Adjusted size */
-    height: 177.78px; /* TikTok aspect ratio but smaller */
+    width: 100px;
+    height: 177.78px;
     border: 2px solid #ccc;
     border-radius: 8px;
-    transition: background-color 0.3s; /* Smooth transition for background color */
+    overflow: hidden;
 }
 
-.video-placeholder:hover {
-    background-color: #bbb; /* Darker shade when hovered */
+.video-placeholder::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0);
+    transition: background-color 0.3s;
+}
+
+.video-placeholder:hover::before {
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay on hover */
 }
 
 @media (max-width: 768px) {
