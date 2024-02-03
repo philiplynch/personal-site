@@ -6,65 +6,115 @@
 }
 
 body, html {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f5;
     color: #333;
+    line-height: 1.6;
 }
 
-/* Navbar */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: #0056b3;
-    color: #fff;
-}
-
-.nav-links a {
-    color: #fff;
+a {
+    color: #0275d8;
     text-decoration: none;
+}
+
+/* Header */
+header {
+    background-color: #004d99;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+.header-logo a img {
+    max-width: 200px;
+}
+
+.nav-collapse ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.nav-collapse ul li {
+    display: inline-block;
     margin: 0 15px;
 }
 
-/* Hero Section */
-.hero {
-    background-color: #007bff;
+.nav-collapse ul li a {
     color: #fff;
-    padding: 2rem;
+    font-weight: bold;
+}
+
+/* Hero Section */
+#hero {
+    background: #007bff url('path/to/your/hero-background.jpg') no-repeat center center / cover;
+    color: #ffffff;
+    padding: 100px 0;
     text-align: center;
 }
 
 /* Services Section */
 .services {
-    padding: 2rem;
+    padding: 50px 20px;
 }
 
-.video-placeholder {
+.services h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.video-gallery, .postcard-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.video, .postcard {
     background-color: #ddd;
-    width: 100px;
-    height: 177.78px;
+    width: calc(33.333% - 20px);
     margin: 10px;
-    display: inline-block;
+    height: 200px; /* Adjust based on your content */
+}
+
+/* About and Testimonials Sections */
+#about-us, #testimonials {
+    padding: 50px 20px;
+    background-color: #e9ecef;
 }
 
 /* Contact Section */
-.contact {
-    background-color: #f4f4f4;
-    padding: 2rem;
+#contact-us {
+    background-color: #fff;
+    padding: 50px 20px;
     text-align: center;
 }
 
-form input, form textarea, form button {
-    width: 100%;
-    margin: 10px 0;
-    padding: 0.5rem;
+form input, form textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #0056b3;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 /* Footer */
 footer {
+    background-color: #333;
+    color: #ffffff;
     text-align: center;
-    padding: 1rem;
-    background-color: #0056b3;
-    color: #fff;
+    padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+    .video, .postcard {
+        width: calc(50% - 20px);
+    }
 }
