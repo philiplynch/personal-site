@@ -1,51 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Philip Lynch Business Services</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Add custom styles and scripts here -->
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <div class="logo">Philip Lynch Business Services</div>
-            <nav class="nav-links">
-                <a href="#video-production">Video Production</a>
-                <a href="#business-postcards">Business Postcards</a>
-                <a href="#contact">Contact Us</a>
+    <header id="header">
+        <div class="wrap">
+            <div class="header-logo">
+                <a href="#"><img src="your-logo-url.png" alt="Philip Lynch Business Services Logo" /></a>
+            </div>
+            <nav class="nav-collapse">
+                <ul id="navigation" class="menu-items">
+                    <li><a href="#video-production">Video Production</a></li>
+                    <li><a href="#business-postcards">Business Postcards</a></li>
+                    <li><a href="#contact-us">Contact Us</a></li>
+                </ul>
             </nav>
         </div>
     </header>
-    <section class="hero">
-        <h1>Professional Business Services</h1>
-        <p>Enhance your brand's visibility with our specialized services.</p>
-    </section>
-    <section id="video-production" class="services">
-        <h2>Video Production</h2>
-        <p>Engaging short videos for social media platforms like Instagram and TikTok.</p>
-        <div class="video-container">
-            <div class="video-placeholder"></div>
-            <div class="video-placeholder"></div>
-            <div class="video-placeholder"></div>
-        </div>
-    </section>
-    <section id="business-postcards" class="services">
-        <h2>Business Postcards</h2>
-        <p>From creation to delivery, comprehensive postcard services for your business.</p>
-    </section>
-    <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Message"></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Philip Lynch Business Services</h1>
+                <p>Empowering Your Business with Creative and Effective Solutions</p>
+            </div>
+        </section>
+
+        <section id="video-production" class="services">
+            <h2>Video Production</h2>
+            <p>Transform your brand message with our engaging video content tailored for social media platforms.</p>
+            <div class="video-gallery">
+                <!-- Placeholder for video examples -->
+                <div class="video"></div>
+                <div class="video"></div>
+                <div class="video"></div>
+            </div>
+        </section>
+
+        <section id="business-postcards" class="services">
+            <h2>Business Postcards</h2>
+            <p>Enhance your direct marketing with our bespoke postcard services, from design to delivery.</p>
+            <div class="postcard-gallery">
+                <!-- Placeholder for postcard examples -->
+                <div class="postcard"></div>
+                <div class="postcard"></div>
+                <div class="postcard"></div>
+            </div>
+        </section>
+
+        <section id="about-us">
+            <h2>About Us</h2>
+            <p>Learn more about our mission, team, and the story behind Philip Lynch Business Services.</p>
+        </section>
+
+        <section id="testimonials">
+            <h2>Client Testimonials</h2>
+            <p>Discover how we've helped transform businesses with our services.</p>
+            <!-- Placeholder for testimonials -->
+            <div class="testimonial"></div>
+            <div class="testimonial"></div>
+        </section>
+
+        <section id="contact-us">
+            <h2>Contact Us</h2>
+            <form>
+                <!-- Contact form fields -->
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea placeholder="Your Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
     <footer>
         <p>© 2024 Philip Lynch Business Services. All rights reserved.</p>
+        <!-- Additional footer content like social links, quick links, or contact info could be added here -->
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
