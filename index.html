@@ -1,22 +1,137 @@
 <!doctype html>
-<html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="stylesheet" href="styles.css" />
-        <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Black+Ops+One&family=Creepster&family=La+Belle+Aurore&family=MedievalSharp&family=Orbitron&family=Rye&display=swap" rel="stylesheet">
-        <script src="index.js"></script>
-    </head>
-    <body>
-        <!-- 
-        Challenge 1:
-        Write the HTML for your personal website.
-        -->
-        <img src="phil.png"><br>
-        <h1>Hi, my name is Philip</h1>
-        <h3><a href="/menu/index.html">Javascript + HTML & CSS Portfolio ::</a></h3>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Philip Lynch | IT Support / Service Desk</title>
+  <meta name="description" content="Philip Lynch — IT Support / Service Desk. CompTIA A+, Network+, Security+ (CIOS, CSIS). St. John’s, Newfoundland and Labrador." />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
 
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="/index.html" aria-label="Go to homepage">
+          <strong>Philip Lynch</strong>
+        </a>
+        <span>IT Support / Service Desk · St. John’s, NL</span>
+      </div>
 
+      <nav class="nav" aria-label="Primary navigation">
+        <a data-nav href="/index.html">Home</a>
+        <a data-nav href="/resume.html">Resume</a>
+        <a data-nav href="/portfolio.html">Portfolio</a>
+      </nav>
+    </div>
+  </header>
 
-        <p><a href="https://www.linkedin.com/in/philip-lynch-39088129/">My LinkedIn</a>.</p>
+  <main id="content" class="container">
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="card">
+          <div class="h-eyebrow">IT Support · Troubleshooting · Networking</div>
+          <h1>Philip Lynch</h1>
+          <p class="lead">
+            Junior IT support professional with hands-on experience in troubleshooting, user support, hardware setup,
+            and SaaS administration. I pair CompTIA certifications with real-world technical problem solving and remote operations experience.
+          </p>
 
-    </body>
+          <ul class="pills" aria-label="Highlights">
+            <li class="pill">Target role: <strong>IT Support / Service Desk</strong></li>
+            <li class="pill">Certifications: <strong>A+ · Network+ · Security+</strong></li>
+            <li class="pill">Stackable: <strong>CIOS · CSIS</strong></li>
+            <li class="pill">English (fluent) · French (strong)</li>
+          </ul>
+
+          <div class="actions">
+            <a class="btn primary" href="/resume.html">View Resume</a>
+            <a class="btn" href="/portfolio.html">View Portfolio</a>
+          </div>
+        </div>
+
+        <aside class="card" aria-label="Contact">
+          <h2>Contact</h2>
+          <dl class="kv">
+            <dt>Email</dt>
+            <dd><a href="mailto:phlynch+website@gmail.com">phlynch+website@gmail.com</a></dd>
+
+            <dt>LinkedIn</dt>
+            <dd><a href="https://www.linkedin.com/in/philiplynch-ca/" target="_blank" rel="noopener">linkedin.com/in/philiplynch-ca</a></dd>
+
+            <dt>Location</dt>
+            <dd>St. John’s, Newfoundland and Labrador</dd>
+          </dl>
+
+          <hr class="sep" />
+
+          <p class="muted" style="margin:0;">
+            Prefer email for quickest response. I’m happy to provide references and additional project details on request.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="grid-2">
+        <div class="card">
+          <h2>Certifications</h2>
+          <p class="muted" style="margin-top:0;">
+            Click a badge to view verification on Credly.
+          </p>
+
+          <div class="badges">
+            <a class="badge" href="https://www.credly.com/badges/464b793b-6f2c-4898-9593-1d81ec35781f" target="_blank" rel="noopener">
+              <img src="/assets/certs/aplus.png" alt="CompTIA A+ badge" />
+              <span>CompTIA A+</span>
+            </a>
+
+            <a class="badge" href="https://www.credly.com/badges/fd6b6f91-2bdc-4684-b565-24b55f766e84" target="_blank" rel="noopener">
+              <img src="/assets/certs/networkplus.png" alt="CompTIA Network+ badge" />
+              <span>Network+</span>
+            </a>
+
+            <a class="badge" href="https://www.credly.com/badges/1828ca9a-4a8a-4b37-b08b-2e4611dbb2b8" target="_blank" rel="noopener">
+              <img src="/assets/certs/securityplus.png" alt="CompTIA Security+ badge" />
+              <span>Security+</span>
+            </a>
+
+            <a class="badge" href="https://www.credly.com/badges/8a9bdea9-7b69-4992-b49f-c6ff5d7bc2ae" target="_blank" rel="noopener">
+              <img src="/assets/certs/cios.png" alt="CompTIA CIOS badge" />
+              <span>CIOS</span>
+            </a>
+
+            <a class="badge" href="https://www.credly.com/badges/8b4c5e0b-3e33-4875-b041-1ca148e678dc" target="_blank" rel="noopener">
+              <img src="/assets/certs/csis.png" alt="CompTIA CSIS badge" />
+              <span>CSIS</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>What I bring</h2>
+          <ul>
+            <li>Strong fundamentals in Windows troubleshooting, networking, and security concepts.</li>
+            <li>Customer-facing support background (high-volume calls, documentation, escalation handling).</li>
+            <li>Hands-on technical operations: domains/DNS, SaaS administration, integrations, and troubleshooting.</li>
+            <li>Clear communication (English fluent, strong French proficiency).</li>
+          </ul>
+
+          <div class="note">
+            Quick links: <a href="/resume.html">Resume</a> for full work history, and <a href="/portfolio.html">Portfolio</a> for technical projects.
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      © <span data-year></span> Philip Lynch · philiplynch.ca · St. John’s, NL
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
 </html>
